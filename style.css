@@ -178,18 +178,12 @@ a:hover { color: var(--teal-dark); }
   opacity: .55;
 }
 
-.portrait-avatar {
+.portrait-photo {
   width: 100%;
   height: 100%;
   border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--teal-tint);
-  color: var(--teal-dark);
-  font-weight: 800;
-  font-size: clamp(48px, 8vw, 72px);
-  letter-spacing: -.02em;
+  object-fit: cover;
+  display: block;
 }
 
 .roster {
