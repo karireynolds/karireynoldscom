@@ -83,6 +83,60 @@ section h2 {
   margin-bottom: 1.25rem;
 }
 
+blockquote {
+  margin: 1.5rem 0 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  font-style: italic;
+  color: var(--muted);
+}
+
+.resume-intro {
+  color: var(--muted);
+  margin-top: -0.5rem;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.highlight .stat {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.highlight .stat-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.download-btn {
+  display: inline-block;
+  margin: 0.5rem 0 2rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.download-btn:hover { opacity: 0.9; }
+
 .resume-block { margin-bottom: 2rem; }
 
 .resume-block h3 {
@@ -142,3 +196,7 @@ footer {
 }
 
 a { color: var(--accent); }
+
+@media (max-width: 480px) {
+  .highlights { grid-template-columns: 1fr; }
+}
