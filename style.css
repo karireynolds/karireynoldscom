@@ -183,6 +183,7 @@ a:hover { color: var(--teal-dark); }
   height: 100%;
   border-radius: 999px;
   object-fit: cover;
+  object-position: 50% 12%;
   display: block;
 }
 
