@@ -365,9 +365,7 @@ a:hover { color: var(--teal-dark); }
 .case-study-shot {
   display: block;
   width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  object-position: top;
+  height: auto;
   border-radius: 14px;
   margin-bottom: 18px;
 }
