@@ -375,36 +375,11 @@ blockquote p {
 .case-study-shot {
   display: block;
   width: 100%;
-  height: auto;
-  border-radius: 14px;
-  margin-bottom: 18px;
-}
-
-.case-study-shots {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 18px;
-}
-
-.case-study-shots .case-study-shot { margin-bottom: 0; }
-
-.case-study-shots .case-study-shot:first-child {
   max-height: 420px;
-  width: 100%;
   object-fit: cover;
   object-position: top;
-}
-
-.case-study-shot-secondary {
-  width: 320px;
-  max-width: 60%;
-  height: auto;
-  border: 1px solid var(--border);
-}
-
-@media (max-width: 700px) {
-  .case-study-shot-secondary { width: 260px; max-width: 80%; }
+  border-radius: 14px;
+  margin-bottom: 18px;
 }
 
 .agent-steps {
