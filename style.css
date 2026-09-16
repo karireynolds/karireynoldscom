@@ -114,13 +114,6 @@ a:hover { color: var(--teal-dark); }
   background: linear-gradient(180deg, var(--bg-tint) 0%, var(--bg) 100%);
 }
 
-.hero-blob {
-  position: absolute;
-  border-radius: 999px;
-}
-.hero-blob-a { top: -120px; right: -90px; width: 420px; height: 420px; background: var(--rose-tint); opacity: .75; }
-.hero-blob-b { bottom: -180px; left: -120px; width: 340px; height: 340px; background: var(--teal-tint); opacity: .7; }
-
 .hero-inner {
   position: relative;
   display: grid;
