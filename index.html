@@ -16,6 +16,7 @@
     <a href="#work">What I do</a>
     <a href="#about">About</a>
     <a href="#resume">Résumé</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#contact" class="pill pill-solid">Get in touch</a>
   </nav>
 </header>
@@ -144,6 +145,38 @@
         <h4>Education &amp; community</h4>
         <p>BA, UC Santa Barbara · Université de Lyon, intensive French · CASA volunteer since 2019 · VOICE mentor, 2023</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section section-tint">
+  <div class="section-inner">
+    <h2>Portfolio</h2>
+    <p class="section-sub">Two recent builds — small, working tools rather than slideware.</p>
+
+    <div class="case-study-list">
+      <article class="case-study">
+        <div class="case-study-head">
+          <h3>Molt</h3>
+          <span class="case-study-meta">Multi-agent Gmail cleanup · Claude Sonnet 4 · Gmail + Notion</span>
+        </div>
+        <p>A five-agent pipeline that clears out promotional inbox clutter. It scans Gmail's Promotions tab, dedupes senders by domain, and automatically processes unsubscribe requests across dozens of senders — flagging anything that needs a manual click, like a mailto-based opt-out, instead of guessing. A summary lands in Notion when it's done.</p>
+        <ol class="agent-steps">
+          <li><span class="work-num">1</span><div><strong>Scout</strong> — searches Gmail's promotions category for recent emails</div></li>
+          <li><span class="work-num">2</span><div><strong>Reader</strong> — deduplicates results by sender domain</div></li>
+          <li><span class="work-num">3</span><div><strong>Extractor</strong> — reads each email and pulls the unsubscribe mechanism (link or mailto address)</div></li>
+          <li><span class="work-num">4</span><div><strong>Firer</strong> — sends the unsubscribe request automatically for link-based senders, flags mailto-based ones as needing manual action</div></li>
+          <li><span class="work-num">5</span><div><strong>Logger</strong> — writes a summary report to Notion (counts and a per-sender table)</div></li>
+        </ol>
+      </article>
+
+      <article class="case-study">
+        <div class="case-study-head">
+          <h3>Revenue Leakage Diagnostic</h3>
+          <span class="case-study-meta">Conversational diagnostic agent · Claude Sonnet 4 · built for a small business consulting practice</span>
+        </div>
+        <p>A conversational diagnostic tool, not a static quiz. It interviews business owners one question at a time across eight categories — pricing, no-shows and cancellations, lead follow-up, overhead, cash flow, inventory, labor, and untracked marketing spend — estimating the monthly dollar impact of each gap and recommending a specific fix before moving to the next category. Access is gated to active clients.</p>
+      </article>
     </div>
   </div>
 </section>

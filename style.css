@@ -344,6 +344,62 @@ blockquote p {
 
 .info-card p { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--text); }
 
+/* Portfolio */
+.case-study-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.case-study {
+  padding: 28px clamp(20px, 3vw, 32px) 30px;
+  border-radius: 26px;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+.case-study-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  margin-bottom: 12px;
+}
+
+.case-study h3 {
+  margin: 0;
+  font-weight: 800;
+  font-size: clamp(18px, 2.2vw, 21px);
+  letter-spacing: -.015em;
+  color: var(--text);
+}
+
+.case-study-meta { font-size: 13px; font-weight: 600; color: var(--muted); }
+
+.case-study p { margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--text-soft); }
+
+.agent-steps {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.agent-steps li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+
+.agent-steps .work-num { flex-shrink: 0; }
+.agent-steps strong { color: var(--text); }
+
 /* Footer */
 footer#contact {
   padding: clamp(52px, 7vw, 92px) clamp(20px, 5vw, 64px);
