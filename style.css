@@ -193,6 +193,8 @@ a:hover { color: var(--teal-dark); }
   color: var(--muted);
 }
 
+.section-sub-wide { max-width: 60ch; }
+
 /* Work cards */
 .cards-grid {
   margin-top: 32px;
